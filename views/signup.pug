@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/sign.css')
+  body
+    block content
+      .lbox
+        .left
+        .right
+          img.logo(src="../../images/LOGO.png")
+          form.t-box(action='/auth/signup' method='post')
+            input.text(type='text' name='userId' placeholder='관리자 아이디 입력')
+            input.text(type='password' name='password' placeholder='관리자 비밀번호 입력')
+            input.s-btn(type='submit' value='회원가입')

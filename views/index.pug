@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/start.css')
+  body
+    block content
+    a(href="/shop.pug") 
+      .box
+       .start
+        img.logo(src="../../images/LOGO.png")
+        .text
+          p 더욱 간편해진 주문
+          h2.color 키오스크로
+          h1.color 주문하세요!
+          img.click(src="../../images/click.png")
+       .footer
+
+      if userId
+        p= userId
+        a(href='/auth/signout') 로그아웃
+      else 
+        .txt
+          a(href='/auth/signup') 회원가입
+          a(href='/auth/signin') 로그인
+      

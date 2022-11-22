@@ -1,0 +1,47 @@
+body{
+  background-color: #ECECEC;
+  margin: 0;
+}
+
+.box{
+  width: 800px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.plus-box{
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+}
+
+.plus-img{
+  width: 80px;
+  height: 80px;
+  float: right;
+}
+
+
+.plus-txt{
+  margin-top: 20px;
+  margin-right: 4px;
+  display: none;
+}
+
+.plus-img:hover+.plus-txt{
+  display: block;
+}
+
+a{
+  margin: 30px;
+  float: right;
+  text-decoration: none;
+  color: #828282;
+}
