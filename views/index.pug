@@ -5,7 +5,7 @@ html
     link(rel='stylesheet', href='/stylesheets/start.css')
   body
     block content
-    a(href="/shop.pug") 
+    a(href="/shop") 
       .box
        .start
         img.logo(src="../../images/LOGO.png")
@@ -17,10 +17,11 @@ html
        .footer
 
       if userId
-        p= userId
-        a(href='/auth/signout') 로그아웃
+        .txt
+          p.p= userId
+          a(href='/auth/signout') 로그아웃
       else 
         .txt
-          a(href='/auth/signup') 회원가입
           a(href='/auth/signin') 로그인
+          a(href='/auth/signup') 회원가입
       
