@@ -1,5 +1,5 @@
 body{
-  background-color: #ECECEC;
+  background-color: #ECECEC!important;
   margin: 0;
 }
 
@@ -15,9 +15,12 @@ body{
   background-color: #fff;
 }
 
-.header{
-  height: 50px;
+.logobox{
   padding: 30px;
+}
+
+#logo{
+  height: 50px;
 }
 
 .menu{
@@ -25,8 +28,37 @@ body{
   height: 380px;
   position: absolute;
   top: 110px;
-  background-color: #ff9f;
-  overflow: auto;
+}
+
+
+.nav{
+  justify-content: space-evenly;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #B24000!important;
+  font-weight: 700;
+  background-color: #FFE49D!important;
+  width: 140px;
+  height: 50px;
+  border: 4px solid #FF894780!important;
+}
+
+.nav-pills .nav-link {
+  border-radius: 100px!important;
+}
+
+.nav-pills .nav-link {
+  width: 140px;
+  height: 50px;
+  border: 2px solid #8C93B9!important;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8C93B9;
+  font-weight: 700;
 }
 
 .hello{
@@ -35,8 +67,22 @@ body{
   overflow: auto;
   position: absolute;
   left: 50%;
-  bottom: 0%;
   transform: translate(-50%, 0);
+}
+
+.hello::-webkit-scrollbar {
+  width: 14px;  /* 스크롤바의 너비 */
+}
+
+.hello::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #ff8a4781; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+.hello::-webkit-scrollbar-track {
+  background: #ffe39da1;  /*스크롤바 뒷 배경 색상*/
+  border-radius: 10px;
 }
 
 .hi{
@@ -68,7 +114,7 @@ body{
   justify-content: center;
 }
 
-.btn{
+.btnnn{
   position: absolute;
   bottom: 0;
   width: 100%;

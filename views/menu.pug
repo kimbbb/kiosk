@@ -3,10 +3,22 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/menu.css')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+
   body
     block content
       a#id(href='/auth/signout') 로그아웃
       .box
+        .card
+          img.card-img-top(src='../images/king.png' style='height:200px')
+          .card-body
+            h5.card-title 불고기 버거
+            p.card-text 4000월
+            .edit
+              a.btn.btn-primary(href='#') 삭제
+              a.btn.btn-primary(href='#') 수정
+        
         .plus-box
           img.plus-img(src="../images/plus.png")
           img.plus-txt(src="../images/Group.png")
