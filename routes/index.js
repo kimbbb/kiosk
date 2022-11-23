@@ -17,4 +17,8 @@ router.get("/shop",(req,res)=>{
   res.render("shop")
 })
 
+router.get("/plus",(req,res)=>{
+  res.render("plus")
+})
+
 module.exports = router;
