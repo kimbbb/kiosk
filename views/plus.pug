@@ -6,4 +6,25 @@ html
     
   body
     block content
-    
+      a#id(href='/auth/signout') 로그아웃
+      .box
+        h2 메뉴
+        .txt
+          img.preview(id="preview")
+          input(type="file" onchange="readURL(this);")
+          input.menu(type="text" name='name' placeholder='메뉴 이름 입력')
+          input.menu(type="number" name='price' placeholder='메뉴 가격 입력')
+        
+        button.add push
+      script.
+        function readURL(input) {
+          if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+              document.getElementById('preview').src = e.target.result;
+            };
+            reader.readAsDataURL(input.files[0]);
+          } else {
+            document.getElementById('preview').src = "";
+          }
+        }
